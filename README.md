@@ -33,9 +33,11 @@ npm install
 4. Create a `.env` File in the Root Directory and Add the Following Environment Variables
 
 ```
-   VITE_SPOTIFY_API_KEY=sua_chave_de_api
+   VITE_SPOTIFY_URL=https://api.spotify.com/v1
 
-   VITE_CLIENT_SECRET=sua_chave_secreta
+   VITE_SPOTIFY_API_KEY=api_key
+
+   VITE_CLIENT_SECRET=client_secret
 ```
 
 5. Compile and Hot-Reload for Development
