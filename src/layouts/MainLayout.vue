@@ -1,12 +1,12 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import MainFooter from './components/MainFooter.vue'
+import MainNavbar from './components/MainNavbar.vue'
+</script>
 
 <template>
-  <div class="container">
-    <header>
-      <h1>Music Library</h1>
-    </header>
-    <v-main class="">
-      <router-view />
-    </v-main>
-  </div>
+  <MainNavbar />
+  <main class="container mx-auto p-4 h-screen">
+    <router-view />
+  </main>
+  <MainFooter />
 </template>
