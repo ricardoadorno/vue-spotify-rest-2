@@ -2,11 +2,15 @@
 
 A simple web app that uses the Spotify API to search for albums and preview tracks.
 
+## Preview
+
+Take a look at the live demo [here](https://vue-spotify-rest-2.vercel.app/).
+
 ## Features
 
-[ ] Search for albums
-[ ] Preview tracks
-[ ] Add albums to a list of favorites
+[X] Search for albums
+[X] Preview tracks
+[X] Add albums to a list of favorites
 [ ] Remove albums from the list of favorites
 [ ] View the list of favorites
 
