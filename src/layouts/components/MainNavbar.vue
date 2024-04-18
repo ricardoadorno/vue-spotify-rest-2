@@ -6,7 +6,7 @@ import AppTypography from '@/components/atoms/AppTypography.vue'
   <nav class="bg-light-dark w-100">
     <div class="container mx-auto p-4 flex justify-between items-center">
       <router-link to="/">
-        <div class="flex gap-2 items-center">
+        <div class="flex gap-3 items-center">
           <img src="@/assets/spotify-icon.svg" alt="Spotify logo" class="h-8" />
           <AppTypography variant="paragraph">Vue Spotify API 2.0</AppTypography>
         </div>
