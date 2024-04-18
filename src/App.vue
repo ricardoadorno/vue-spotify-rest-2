@@ -1,10 +1,12 @@
 <script setup lang="ts">
 import { onMounted } from 'vue'
-import { RouterView } from 'vue-router'
 import useAuthStore from '@/stores/auth'
 import AuthService from './services/AuthService'
+import usePlayerStore from '@/stores/player'
+import AudioPlayer from './components/molecules/AudioPlayer.vue'
 
 const authStore = useAuthStore()
+const playerStore = usePlayerStore()
 
 onMounted(async () => {
   if (!authStore.hasToken) {
@@ -22,5 +24,11 @@ onMounted(async () => {
 </script>
 
 <template>
-  <RouterView />
+  <router-view />
+  <AudioPlayer
+    v-if="playerStore.url"
+    @close-audio="playerStore.closeAudio"
+    :url="playerStore.url"
+    :name="playerStore.name"
+  />
 </template>
