@@ -1,4 +1,4 @@
-# spotify-api
+# Vue Spotify API rest 2.0
 
 A simple web app that uses the Spotify API to search for albums and preview tracks.
 
