@@ -1,6 +1,11 @@
 <script lang="ts" setup>
+import { useRouter } from 'vue-router'
+
+const router = useRouter()
+
 defineProps<{
   album: {
+    id: string
     name: string
     artists: string
     release_date: string
@@ -10,15 +15,20 @@ defineProps<{
 </script>
 
 <template>
-  <div class="card">
-    <img :src="album.image_url" alt="Album Image" class="card__img" />
-    <div class="card__content">
-      <h3 class="card__content-title">
+  <div
+    @click="router.push(`/album/${album.id}`)"
+    class="flex flex-col w-full max-w-xs p-4 m-4 rounded-md transition-transform transform-gpu hover:scale-105 duration-300 ease-in-out cursor-pointer"
+  >
+    <img :src="album.image_url" alt="Album Image" class="rounded-md" />
+    <div class="flex flex-col gap-2 mt-4">
+      <h3 class="text-lg font-bold">
         {{ album.name }}
       </h3>
-      <p>Artist's Name: {{ album.artists }}</p>
+      <p class="text-sm">Artist's Name: {{ album.artists }}</p>
 
-      <small>Release Date: {{ album.release_date }}</small>
+      <small class="text-xs text-gray"
+        >Release Date: {{ new Date(album.release_date).toLocaleDateString() }}</small
+      >
     </div>
   </div>
 </template>

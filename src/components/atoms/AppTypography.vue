@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const props = withDefaults(
   defineProps<{
-    variant: 'paragraph' | 'heading'
+    variant: 'paragraph' | 'heading' | 'caption'
   }>(),
   {
     variant: 'paragraph'
@@ -9,8 +9,9 @@ const props = withDefaults(
 )
 
 const variantClasses = {
-  paragraph: 'text-gray-700',
-  heading: 'text-black font-bold'
+  paragraph: '',
+  heading: 'text-2xl font-bold',
+  caption: 'text-lg'
 }
 </script>
 
