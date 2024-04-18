@@ -7,7 +7,9 @@ export default {
         primary: 'var(--spotify-green)',
         dark: 'var(--spotify-dark)',
         'light-dark': 'var(--spotify-light-dark)',
-        gray: 'var(--spotify-gray)'
+        gray: 'var(--spotify-gray)',
+        success: 'var(--semantic-success)',
+        danger: 'var(--semantic-danger)'
       }
     }
   },

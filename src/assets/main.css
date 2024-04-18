@@ -8,6 +8,9 @@
     --spotify-dark: #111213;
     --spotify-light-dark: #333333;
     --spotify-gray: #c5c3c3;
+
+    --semantic-success: #2ecc71;
+    --semantic-danger: #e74c3c;
   }
 }
 
