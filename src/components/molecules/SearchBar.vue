@@ -14,8 +14,13 @@ defineEmits<{
 </script>
 
 <template>
-  <form @submit.prevent="$emit('submit')" class="flex items-center w-5/12">
+  <form
+    @submit.prevent="$emit('submit')"
+    class="flex items-center w-5/12"
+    data-testid="search-bar-form"
+  >
     <AppTextInput
+      data-testid="search-bar"
       :placeholder="placeholder"
       v-model="search"
       class="w-full rounded-r-none bg-gray text-dark"
